@@ -1,0 +1,22 @@
+C:.
+│
+│   Program.cs                ← Main entry point: loads files, detects language, runs rule engine
+│   README.md                 ← Project overview and instructions
+│
+├───Helpers
+│       FileLoader.cs         ← Loads code files and detects language from file extension
+│
+├───Models
+│       CodeIssue.cs          ← Represents a detected issue: line number + descriptive message
+│
+├───Output
+│       report.txt            ← Auto-generated report with analysis results (e.g. null issues)
+│
+├───Rules
+│       NullSafetyRule.cs     ← Checks for unsafe null usage in code (core analysis rule)
+│       RuleEngine.cs         ← Central manager to apply all rules (modular, extensible)
+│
+└───Samples
+        test.py               ← Sample Python file used for testing rule logic
+        TestClass.java        ← Sample Java file used for testing rule logic
+        TestProgram.cs        ← Sample C# file used for testing rule logic
