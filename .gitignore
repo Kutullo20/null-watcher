@@ -1,0 +1,39 @@
+# Build results
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+
+# User files
+*.user
+*.suo
+*.log
+
+# IDE configs
+.vs/
+.vscode/
+.idea/
+
+# OS/system files
+Thumbs.db
+.DS_Store
+*.swp
+
+# NuGet files
+*.nupkg
+packages/
+project.assets.json
+project.nuget.cache
+
+
+# Runtime files
+*.runtimeconfig.json
+*.deps.json
+
+# MSBuild files
+*.csproj.nuget.*
+*.csproj.CoreCompileInputs.cache
+*.csproj.FileListAbsolute.txt
+*.assets.cache
