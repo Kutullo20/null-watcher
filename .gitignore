@@ -1,39 +1,39 @@
-# Build results
+# Build output folders
 bin/
 obj/
-*.exe
-*.dll
-*.pdb
-*.cache
 
-# User files
+# Visual Studio workspace and user files
+.vs/
 *.user
 *.suo
-*.log
 
-# IDE configs
-.vs/
-.vscode/
+# Rider IDE folders
 .idea/
 
-# OS/system files
-Thumbs.db
-.DS_Store
-*.swp
+# ASP.NET runtime files
+*.db
+*.db-shm
+*.db-wal
 
-# NuGet files
-*.nupkg
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# NuGet package folders
 packages/
-project.assets.json
-project.nuget.cache
 
+# Publish output folder
+publish/
 
-# Runtime files
-*.runtimeconfig.json
-*.deps.json
+# Temporary files
+*.tmp
+*.temp
 
-# MSBuild files
-*.csproj.nuget.*
-*.csproj.CoreCompileInputs.cache
-*.csproj.FileListAbsolute.txt
-*.assets.cache
+# Resharper files
+_ReSharper*/
+
+# Others
+*.cache
+*.pdb
