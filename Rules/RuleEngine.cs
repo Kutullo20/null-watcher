@@ -1,9 +1,16 @@
-// Defines the analysis engine
-public class RuleEngine
+using System;
+
+namespace Rules
 {
-    // Simulates analyzing a file (for now just prints its name)
-    public void Analyze(string filePath)
+    // RuleEngine handles applying analysis rules to source files
+    public class RuleEngine
     {
-        Console.WriteLine($"Placeholder: Analyzing {filePath}");
+        // Analyzes a file by printing its path and detected language
+        // This is a placeholder — real rules will be added later
+        public void Analyze(string filePath, string language)
+        {
+            Console.WriteLine($"Analyzing {filePath} (Language: {language})");
+            Console.WriteLine($"Placeholder: Analyzing {filePath}");
+        }
     }
 }
