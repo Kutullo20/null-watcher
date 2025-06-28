@@ -1,16 +1,19 @@
-using System;
+using System.Collections.Generic;
+using System.IO;
+using Models;
+using Rules;
 
-namespace Rules
+public class RuleEngine
 {
-    // RuleEngine handles applying analysis rules to source files
-    public class RuleEngine
+    public List<CodeIssue> Analyze(string filePath, string language)
     {
-        // Analyzes a file by printing its path and detected language
-        // This is a placeholder — real rules will be added later
-        public void Analyze(string filePath, string language)
-        {
-            Console.WriteLine($"Analyzing {filePath} (Language: {language})");
-            Console.WriteLine($"Placeholder: Analyzing {filePath}");
-        }
+        var issues = new List<CodeIssue>();
+        var lines = File.ReadAllLines(filePath);
+
+        // Apply the NullSafetyRule
+        var nullIssues = NullSafetyRule.Check(lines, language);
+        issues.AddRange(nullIssues);
+
+        return issues;
     }
 }
