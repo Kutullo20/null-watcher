@@ -12,9 +12,17 @@ var engine = new RuleEngine();
 // Loop through each file and send it for analysis
 foreach (var file in files)
 {
-    // Detect the programming language based on file extension
     var language = FileLoader.DetectLanguage(file);
+    Console.WriteLine($"\nAnalyzing {file} (Language: {language})");
 
-    // Analyze the file using the engine, passing the file path and its detected language
-    engine.Analyze(file, language);
+    var issues = engine.Analyze(file, language);
+
+    if (issues.Count == 0)
+        Console.WriteLine("✅ No null issues found");
+    else
+    {
+        foreach (var issue in issues)
+            Console.WriteLine($"❌ Line {issue.LineNumber}: {issue.Message}");
+    }
 }
+
