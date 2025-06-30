@@ -25,7 +25,7 @@ namespace Rules
                 }
                 else if (language == "Python")
                 {
-                    if (line.Contains("None") && !line.Contains("is") && !line.Contains("=="))
+                    if (line.Contains("None") && !line.Contains("!=") && !line.Contains("=="))
                     {
                         issues.Add(new CodeIssue(i + 1, "Possible risky use of None without checks"));
                     }
