@@ -1,0 +1,23 @@
+C:.
+│
+│   Program.cs               ← Main entry point: coordinates the workflow by calling helpers, running rules, and printing results
+│   README.md                ← Project overview
+│
+├───Helpers
+│   │   FileLoader.cs        ← Provides helper methods used to load files and detect their programming language
+│   │   ReportGenerator.cs   ← Called by Program.cs to write analysis results to the Output/report.txt file
+│
+├───Models
+│   │   CodeIssue.cs         ← Data model representing a single code issue with line number and description
+│
+├───Output
+│   │   report.txt           ← Contains automatically generated results of the code analysis
+│
+├───Rules
+│   │   NullSafetyRule.cs    ← Defines logic to detect unsafe null usage for Java, Python, and C#
+│   │   RuleEngine.cs        ← Applies all active rules (for now it is only NullSafetyRule) 
+│
+└───Samples
+    │   test.py              ← Python test file used to verify None detection
+    │   TestClass.java       ← Java test file used to verify null detection
+    │   TestProgram.cs       ← C# test file used to verify null detection
