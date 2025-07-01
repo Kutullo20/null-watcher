@@ -1,0 +1,18 @@
+Analysis Report for: Samples\test.py
+Generated at: 2025/07/01 20:15:10
+==================================
+Line 3: Possible risky None usage without check
+
+
+Analysis Report for: Samples\TestClass.java
+Generated at: 2025/07/01 20:15:10
+==================================
+Line 7: Possible risky null usage without check
+
+
+Analysis Report for: Samples\TestProgram.cs
+Generated at: 2025/07/01 20:15:10
+==================================
+Line 10: Possible risky null usage without check
+
+
