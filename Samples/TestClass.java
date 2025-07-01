@@ -7,12 +7,12 @@ public class TestClass {
         String name = null;
 
     
-        // Safe: Null check before assignment with `==`
+        // Safe: Null check before use with `==`
         if (name == null){
             System.out.println("Name is null");
         }
 
-        // Safe: Null check before assignment with `!=`
+        // Safe: Null check before use with `!=`
         String surname = "letageng";
         if (surname != null) { // defensive programming 
             System.out.println("Surname is not null");
