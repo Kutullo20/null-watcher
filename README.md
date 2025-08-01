@@ -6,7 +6,7 @@
 
 ## ⚙️ How It Works 
 - 🧾 Reads each line of code from the file being analyzed.
-- 🕵️‍♀️ Ignores null keywords inside strings (e.g. "null" or 'None') so only actual code is checked and comments(e.g. #None.)
+- 🕵️‍♀️ Ignores null keywords inside strings (e.g. "null" or 'None') so only actual code is checked 
 - 🔍 Looks for risky patterns, such as: null in Java or C# without **==** or **!=** checks
 - 🔍 Looks for risky patterns, such as: None in Python without **is** or **is not** checks
 
